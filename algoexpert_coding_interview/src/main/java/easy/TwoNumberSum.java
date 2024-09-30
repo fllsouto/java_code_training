@@ -1,11 +1,3 @@
-package easy;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.HashSet;
-
-
 /*
  * Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum. 
  * If any two numbers in the input array sum up to the target sum, the function should return them in an array, in any order. 
@@ -18,6 +10,15 @@ import java.util.HashSet;
 
 https://www.algoexpert.io/questions/two-number-sum
  */
+
+package easy;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.HashSet;
+
+
 
 public class TwoNumberSum {
     
