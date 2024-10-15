@@ -2,6 +2,8 @@ package util;
 
 import java.util.Arrays;
 
+import datastructure.BST;
+
 public class DebugHelper {
     public static void debugPrint(Object array) {
         if (array == null) {
@@ -38,5 +40,26 @@ public class DebugHelper {
         System.out.println("ValueName: " + valueName);
         System.out.println("Value: " + value);
         System.out.println("--------------------------------");
+    }
+
+    public static void printPair(String valueAName, Object valueA, 
+        String valueBName, Object valueB) {
+        System.out.println("--------------------------------");
+        System.out.println("(" + valueAName + ", " + valueBName + ") = (" + valueA + ", " + valueB + ")");
+        System.out.println("--------------------------------");
+    }
+
+    public static void printBST(BST bst) {
+        printValue("value", bst.value());
+        
+        if (bst.hasLeft()) {
+            printValue("value.left", "");
+            printBST(bst.left());
+        }
+
+        if (bst.hasRight()) {
+            printValue("value.right", "");
+            printBST(bst.right());
+        }
     }
 }
